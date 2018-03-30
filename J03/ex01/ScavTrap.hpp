@@ -1,35 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   FragTrap.hpp                                       :+:      :+:    :+:   */
+/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jichen-m <jichen-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/03/29 17:01:58 by jichen-m          #+#    #+#             */
-/*   Updated: 2018/03/30 17:34:35 by jichen-m         ###   ########.fr       */
+/*   Created: 2018/03/30 10:00:08 by jichen-m          #+#    #+#             */
+/*   Updated: 2018/03/30 17:52:32 by jichen-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FRAGTRAP_H
-# define FRAGTRAP_H
+#ifndef SCAVTRAP_H
+# define SCAVTRAP_H
 
 # include <iostream>
 #include <stdlib.h>
 
-class	FragTrap
+class	ScavTrap
 {
 	public:
-		FragTrap(void);
-		FragTrap(std::string name);
-		FragTrap(FragTrap const &src);		//copy
-		~FragTrap(void);
+		ScavTrap(void);
+		ScavTrap(std::string name);
+		ScavTrap(ScavTrap const &src);
+		~ScavTrap(void);
 
-		FragTrap	&operator=(FragTrap const &rhs);
+		ScavTrap	&operator=(ScavTrap const &rhs);
+
+		/*Challenges*/
+		void			challengeNewcomer(void) const;
 
 		/*----Attacks----*/
-		void			rangedAttack(std::string const &target) const;
-		void			meleeAttack(std::string const &target) const;
-		void			vaulthunter_dot_exe(std::string const &target);
+		void			rangedAttack(std::string const &target);
+		void			meleeAttack(std::string const &target);
 
 		/*----Actions----*/
 		void			takeDamage(unsigned int amount);

@@ -6,7 +6,7 @@
 /*   By: jichen-m <jichen-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/29 17:01:43 by jichen-m          #+#    #+#             */
-/*   Updated: 2018/03/30 18:17:53 by jichen-m         ###   ########.fr       */
+/*   Updated: 2018/03/30 18:18:04 by jichen-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,6 +117,7 @@ void	FragTrap::vaulthunter_dot_exe(std::string const &target)
 	else
 		std::cout << "Not enought energy to attack! Energy remaining: " << get_energy_points() << std::endl << std::endl;
 }
+
 /*--------------*/
 
 /*----ACTIONS----*/
