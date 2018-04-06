@@ -6,7 +6,7 @@
 /*   By: jichen-m <jichen-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/05 14:56:30 by jichen-m          #+#    #+#             */
-/*   Updated: 2018/04/05 20:54:40 by jichen-m         ###   ########.fr       */
+/*   Updated: 2018/04/05 23:27:40 by jichen-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,10 @@ int	main(void)
 	cout << endl << endl;
 
 	(*b) = (*a);
-	cout << "Copy Array A to Array B and display it: " << (*b)[1] << endl;
+	cout << "Copy Array A to Array B and display it: " << (*b)[1] << endl << endl;
+
+	Array<int> *c(a);
+	cout << "Call copy assignament and display: " << (*c)[1] << endl;
 
 	delete a;
 	delete b;

@@ -6,13 +6,12 @@
 /*   By: jichen-m <jichen-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/05 10:15:52 by jichen-m          #+#    #+#             */
-/*   Updated: 2018/04/05 12:50:22 by jichen-m         ###   ########.fr       */
+/*   Updated: 2018/04/06 17:25:37 by jichen-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-
-using namespace std;
+#include "whatever.cpp"
 
 int main( void )
 {
